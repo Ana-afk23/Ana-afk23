@@ -7,7 +7,8 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
         var app = builder.Build();
 
-        app.MapGet("/", () => "Hello World!");
+        app.MapGet("/", () => "Página Principal");
+        app.MapGet("/Produtos", () => "Lista de Produtos");
 
         app.Run();
     }
